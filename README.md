@@ -1,2 +1,7 @@
-# lochat
-Localize your friends and chat rooms per localization.
+# lochat API
+
+Usage
+-------
+
+	$ python3 manage.py runserver 
+
