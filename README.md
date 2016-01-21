@@ -1,7 +1,7 @@
 # lochat API
 
 Configuration
-__-------------
+_-------_
 
 	$ git clone https://github.com/lochat/api
 	$ pip install -r requirements.txt
