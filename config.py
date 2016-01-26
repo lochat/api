@@ -6,6 +6,7 @@ class Config:
     LOCHAT_MAIL_SUBJECT_PREFIX = '[Lochat]'
     LOCHAT_MAIL_SENDER = 'Lochat Admin <admin@lochat.com>'
     MAIL_SERVER = 'smtp.googlemail.com'
+    MAIL_PORT = 587
     MAIL_USE_TLS = True
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
