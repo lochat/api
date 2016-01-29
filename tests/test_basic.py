@@ -12,9 +12,9 @@ class BasicsTestCase(unittest.TestCase):
         self.client = self.app.test_client()
 
     def tearDown(self):
-        namedb = self.app.config['MONGO_SETTINGS']['db']
-        client = db.connect(namedb)
-        client.drop_database(namedb)
+        # namedb = self.app.config['MONGO_SETTINGS']['db']
+        # client = db.connect(namedb)
+        # client.drop_database(namedb)
         self.app_context.pop()
 
     def test_example(self):
