@@ -1,7 +1,0 @@
-export MAIL_USERNAME='example@flask.com'
-export MAIL_PASSWORD='example'
-export DEV_DATABASE_URL='data-dev'
-export TEST_DATABASE_URL='data-test'
-export DATABASE_URL='data'
-# development=default, testing or production
-export FLASK_CONFIG='default'
