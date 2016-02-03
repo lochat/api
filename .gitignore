@@ -40,4 +40,4 @@ nosetests.xml
 
 # Virtual environment
 venv
-set_envs.sh
+set_envs.env
