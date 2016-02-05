@@ -1,7 +1,7 @@
 db:
     image: mongo
     volumes: 
-        - /var/lib/mongo
+        - /data/db:/data/db
 redis:
     image: redis
 lochat-base:
@@ -9,7 +9,7 @@ lochat-base:
     env_file: set_envs.env
     command: python3.4 manage.py runserver --host 0.0.0.0
     volumes: 
-        - /usr/src/app
+        - .:/usr/src/app
     ports:
         - "5000:5000"
     links:
