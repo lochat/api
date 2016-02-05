@@ -4,12 +4,14 @@ configure
 ---------
 
 	$ git clone https://github.com/lochat/api
-	$ pip3 install -r requirements.txt
+	$ docker build -t lochat-base
+	$ vim set_envs.env
 
 Usage
 -------
 
-	$ python3 manage.py runserver
-	$ python3 manage.py test
-	$ python3 manage.py shell
+	.. Executando servidor de desenvolvimento:
+		$ docker-compose up
+	.. Executando testes:
+		$ docker-compose run lochat-base python3.4 manage.py test
 
