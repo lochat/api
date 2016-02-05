@@ -10,8 +10,11 @@ configure
 Usage
 -------
 
-.. Executando servidor de desenvolvimento:
-		$ docker-compose up
-.. Executando testes:
-		$ docker-compose run lochat-base python3.4 manage.py test
+Executando servidor de desenvolvimento:
+		
+	$ docker-compose up
+		
+Executando testes:
+	
+	$ docker-compose run lochat-base python3.4 manage.py test
 
