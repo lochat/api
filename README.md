@@ -7,7 +7,7 @@ Install docker-compose:
 		
 	$ pip install docker-compose
 
-configure
+Configure
 ---------
 
 	$ git clone https://github.com/lochat/api
