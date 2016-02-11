@@ -4,8 +4,8 @@ configure
 ---------
 
 	$ git clone https://github.com/lochat/api
-	$ docker build -t lochat-base
-	$ vim set_envs.env
+	$ cd api
+    $ docker build .
 
 Usage
 -------
