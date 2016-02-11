@@ -1,5 +1,12 @@
 # lochat API
 
+Requirements
+-------
+
+Install docker-compose:
+		
+	$ pip install docker-compose
+
 configure
 ---------
 
@@ -18,5 +25,5 @@ Executando servidor de desenvolvimento:
 		
 Executando testes:
 	
-	$ docker-compose run lochat-base python3.4 manage.py test
+	$ docker-compose run -e FLASK_CONFIG=testing lochat-base python3.4 manage.py test
 
