@@ -6,6 +6,8 @@ configure
 	$ git clone https://github.com/lochat/api
 	$ cd api
     $ docker build .
+    $ mv set_envs.env.template set_envs.env
+    $ nano set_envs.env
 
 Usage
 -------
