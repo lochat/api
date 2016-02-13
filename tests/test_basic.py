@@ -25,11 +25,5 @@ class BasicsTestCase(unittest.TestCase):
         json_response = json.loads(response.data.decode('utf-8'))
         self.assertTrue(json_response['result'] == 'Hello, World')
 
-    def test_db(self):
-        user = User(name='teste', password='teste12')
-        user.save()
-        user_persist = User.objects.get(name='teste')
-        self.assertTrue(user_persist.password == user.password)
-
     def test_app_is_testing(self):
         self.assertTrue(current_app.config['TESTING'])
