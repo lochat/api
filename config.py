@@ -3,6 +3,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
     LOCHAT_MAIL_SUBJECT_PREFIX = '[Lochat]'
     LOCHAT_MAIL_SENDER = 'Lochat Admin <admin@lochat.com>'
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -38,5 +39,3 @@ config = {
 
     'default': DevelopmentConfig,
 }
-
-
