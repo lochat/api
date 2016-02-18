@@ -1,8 +1,6 @@
 import unittest
-import json
-from flask import current_app, url_for
+from flask import current_app
 from app import create_app, db
-from app.models import User
 
 
 class BasicsTestCase(unittest.TestCase):
@@ -18,12 +16,6 @@ class BasicsTestCase(unittest.TestCase):
         client = db.connect(namedb)
         client.drop_database(namedb)
         self.app_context.pop()
-
-    def test_example(self):
-        response = self.client.get(url_for('api.test'))
-        self.assertTrue(response.status_code == 200)
-        json_response = json.loads(response.data.decode('utf-8'))
-        self.assertTrue(json_response['result'] == 'Hello, World')
 
     def test_app_is_testing(self):
         self.assertTrue(current_app.config['TESTING'])
