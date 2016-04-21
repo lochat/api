@@ -20,9 +20,9 @@ Usage
 
 Executing development server:	
 	
-    $ docker-compose up
+    $ make run_develop
 		
 Executing tests:
 	
-	$ docker-compose run -e FLASK_CONFIG=testing lochat-base python3.4 manage.py test
+	$ make run_tests
 
