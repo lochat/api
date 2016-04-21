@@ -21,3 +21,16 @@ class User(db.Document):
 
     def verify_password(self, password):
         return check_password_hash(self.password_hash, password)
+
+    def likes(self, scrap):
+        scrap.likes += 1
+
+    def deslikes(self, scrap):
+        if scrap.likes >= 0:
+            scrap.likes -= 1
+
+
+class Scrap(db.Document):
+    user = db.ReferenceField(User, reverse_delete_rule=db.CASCADE)
+    content = db.StringField(max_length=500, required=True)
+    likes = db.IntField(default=0)
